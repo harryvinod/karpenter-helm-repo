@@ -21,7 +21,7 @@ entries:
           description: NodePool is the Schema for the NodePools API.
     apiVersion: v2
     appVersion: 1.0.2
-    created: "2024-09-25T15:55:51.706054849Z"
+    created: "2024-09-25T16:28:00.511877064Z"
     description: A Helm chart for Karpenter, an open-source node provisioning project
       built for Kubernetes.
     digest: 31c17b4b7c711817a9d3bdfb2ba025c0604ba66bbc949cc9c5e61134bde5a2f0
@@ -40,4 +40,43 @@ entries:
     urls:
     - https://harryvinod.github.io/karpenter-helm-repo/karpenter-1.0.2.tgz
     version: 1.0.2
-generated: "2024-09-25T15:55:51.703832215Z"
+  - annotations:
+      artifacthub.io/alternativeName: karpenter-provider-aws
+      artifacthub.io/crds: |
+        - kind: EC2NodeClass
+          version: v1beta1
+          name: ec2nodeclasses.karpenter.k8s.aws
+          displayName: EC2NodeClass
+          description: EC2NodeClass is the Schema for the EC2NodeClass API.
+        - kind: NodeClaim
+          version: v1beta1
+          name: nodeclaims.karpenter.sh
+          displayName: NodeClaim
+          description: NodeClaim is the Schema for the NodeClaims API.
+        - kind: NodePool
+          version: v1beta1
+          name: nodepools.karpenter.sh
+          displayName: NodePool
+          description: NodePool is the Schema for the NodePools API.
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2024-09-25T16:28:00.509102217Z"
+    description: A Helm chart for Karpenter, an open-source node provisioning project
+      built for Kubernetes.
+    digest: c28aade574526ead97ed2245c237486e9a70539b8d545bd911bc982b01c1f51c
+    home: https://karpenter.sh/
+    icon: https://repository-images.githubusercontent.com/278480393/dab059c8-caa1-4b55-aaa7-3d30e47a5616
+    keywords:
+    - cluster
+    - node
+    - scheduler
+    - autoscaling
+    - lifecycle
+    name: karpenter
+    sources:
+    - https://github.com/aws/karpenter-provider-aws/
+    type: application
+    urls:
+    - https://harryvinod.github.io/karpenter-helm-repo/karpenter-1.0.1.tgz
+    version: 1.0.1
+generated: "2024-09-25T16:28:00.506475173Z"
